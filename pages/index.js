@@ -6,6 +6,16 @@ import styles from '../styles/Home.module.css';
 export default function Home() {
   return (
     <div className={styles.container}>
+    <div className={styles.backgroound}></div>  
+    <div className={styles.waveWrapper}>
+  <svg className={styles.wave} viewBox="0 0 1440 320">
+    <path
+      fill="#0f172a"
+      fillOpacity="1"
+      d="M0,160L60,160C120,160,240,160,360,154.7C480,149,600,139,720,144C840,149,960,171,1080,170.7C1200,171,1320,149,1380,138.7L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+    ></path>
+  </svg>
+</div>
       <Head>
         <title>Ade Rizky Pratama | Portofolio</title>
       </Head>
