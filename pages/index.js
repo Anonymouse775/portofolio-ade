@@ -82,9 +82,6 @@ export default function Home() {
     </div>
   </div>
 </section>
-<footer className={styles.footer}>
-  <p>© {new Date().getFullYear()} Ade Rizky Pratama. Dibuat dengan Next.js</p>
-</footer>
           <Image
             src="/Ade.jpg"
             alt="Ade Rizky Pratama"
@@ -93,6 +90,16 @@ export default function Home() {
             className={styles.image}
           />
         </div>
+        <audio id="musik" autoPlay loop>
+  <source src="/musik.mp3" type="audio/mpeg" />
+  Browser Anda tidak mendukung pemutar audio.
+</audio>
+<button onClick={() => document.getElementById('musik').play()} className={styles.playButton}>
+  Mainkan Musik
+</button>
+<footer className={styles.footer}>
+  <p>© {new Date().getFullYear()} Ade Rizky Pratama. Dibuat dengan Next.js</p>
+</footer>
       </main>
     </div>
   );
